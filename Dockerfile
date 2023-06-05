@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM resin/rpi-raspbian:latest
 COPY ui.patch /tmp
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive \
